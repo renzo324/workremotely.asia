@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import remoteOK from 'pangako.js';
+import RemoteOK from 'pangako.js';
 import './App.css';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <remoteOK />
+        <RemoteOK />
       </header>
     </div>
   );
