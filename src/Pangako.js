@@ -5,17 +5,18 @@ const RemoteOK = () => {
   const [feed, setFeed] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get('https://remoteok.io/api');
+      const response = await axios.get('https://cors-anywhere.herokuapp.com/remoteok.io/api');
       setFeed(response.data);
+      console.log(feed);
     };
     fetchData();
-  }, []);
+  }, );
   
   return (
     <React.Fragment>
       <h1>Feed</h1>
      
-        <ul>
+         {/* <ul>
           <li>
             <p class="legal">{feed[0].legal}</p>
             <a class="position" href="{{ feed[0].url }}">{feed[0].position }</a>
@@ -25,7 +26,7 @@ const RemoteOK = () => {
                 <li ><a href="{ feed[0].url }">{feed[0].url}</a></li>
               </ul>
           </li>
-        </ul>
+        </ul>  */}
       </React.Fragment>
     )
 }

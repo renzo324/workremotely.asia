@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import RemoteOK from 'pangako.js';
+import RemoteOK from './Pangako.js';
 import './App.css';
 
 function App() {
