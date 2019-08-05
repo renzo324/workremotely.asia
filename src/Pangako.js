@@ -10,23 +10,24 @@ const RemoteOK = () => {
       console.log(feed);
     };
     fetchData();
-  }, );
+    console.log(feed);
+  }, [feed]);
   
   return (
     <React.Fragment>
       <h1>Feed</h1>
      
-         {/* <ul>
-          <li>
-            <p class="legal">{feed[0].legal}</p>
-            <a class="position" href="{{ feed[0].url }}">{feed[0].position }</a>
-              <ul>
-                <li class="company">{ feed[0].company }</li>
-                <li class="tags">{feed[0].tags}</li>
+         {/* <ul> */}
+          {/* <li> */}
+            <p className="legal">{feed[0].legal}</p>
+             {/* <a className="position" href="{ feed[0].url }">{feed[0].position }</a> */}
+            {/*  <ul>
+                <li className="company">{ feed[0].company }</li>
+                <li className="tags">{feed[0].tags}</li>
                 <li ><a href="{ feed[0].url }">{feed[0].url}</a></li>
-              </ul>
-          </li>
-        </ul>  */}
+              </ul> */}
+          {/* </li> */}
+        {/* </ul>  */}
       </React.Fragment>
     )
 }
